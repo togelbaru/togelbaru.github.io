@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Baraya Angka Mati
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "rondo"
+  },
+  "headline": "Baraya Angka Mati",
+  "datePublished": "2021-05-09",
+  "image": "https://i.pinimg.com/236x/52/26/1d/52261ddbd66e596f7dcef848b045600c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "syair togel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=baraya+angka+mati",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Baraya Angka Mati
+            </a>
+        </h1>
+        <p>
+                            syair togel
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Baraya Angka Mati</strong>. Naum perlu diingat bahwa melakukan abori itu memiliki resiko yang besar buat sang ibu hal ini pula yang banyak membuat angka kematian ibu aborsi sangat besar diantaranya. Mata shio Wejangan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i0.wp.com/lh3.googleusercontent.com/-rK9Stlr16HQ/XH9FYI3OZkI/AAAAAAAB1J0/LeLtwtY4HT05Pfb9AKWyL7l17W4_5eNuACLcBGAs/s1600/forum-syair-OPESIA-XYZ_24.jpg?resize=650,400" alt="Forum Sydney Hari Ini" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88EP8W8b7v2JKn1UlvbpGG3FY3qcHUox4RFD30hwBC1eTyIlnyBw1LWqh6ZlUlW6-ugw';">
+        <figcaption>Forum Sydney Hari Ini from aldaketahamasei.info</figcaption>
+    </figure>
+        <p>
+        Abis modal bangkrut hemmmm. Kita masukan ke rumus tadi 100 36 64 lalu 64 20 84 jadi angka 64 sd 84 kemungkinan kecil keluar. Untuk menentukan angka di posisi ini bisa melalui beberapa cara yaitu.
+    </p>
+    <h3>Apakah Anda ingin bergabung dengan Facebook.</h3>
+    <p>Mencari angka mati 2d. Abis modal bangkrut hemmmm. Mencari angka 2D mati Rumusnya sangat sederhana yaitu 100 angka 2D yang keluar 20. Syair sdy kodesair sgp Kode togel kode sair togel sikni hari ini Angka jitu versi jawa syair sydney 13 maret kode syair sgp hari ini angka mati burung hantu sdy 13 3 21 sairhk generator togel syair sidni hari ini syair hk Rumus togel jawa 2021 kampjlengan hari ini buku mimpi 3d sair hk hhari ini kamplengan hk mistik togel hk.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Angka Mati Syair Baraya Team" src="https://kodalmimpi.com/wp-content/uploads/2021/02/SYAIR_ULAR_BERBISA-6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOW3vodibx8zHuiIXv35sG4LTYpjIHYQ--t2Jtquu91zsVKgFLkdp-d5sYs43rr6_hvk';" />
+        <small>Source: datakeluaranhk.clodui.com</small>
+                    <p>Angka paling atas ditabel shio Ulasan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kode Syair Los Angeles 30 Juli 2020 Hari Kamis Tergaib Di 2020 Kentucky Gaib Los Angeles" src="https://i.pinimg.com/236x/52/26/1d/52261ddbd66e596f7dcef848b045600c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCv-rSjRdpnBDvud5RojKGo8zZHibFmrupQc44XGpjl2QpP4pjpvl4Llc3B-sO27dei3k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mencari angka mati 2d.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Angka Mati Syair Baraya Team" src="https://1.bp.blogspot.com/-EpSIdrpVPJU/YG9TWJ1JZ8I/AAAAAAAEelo/O1F5QufhqL0ZAJTWXDuKUeUztu3ZA03KACLcBGAsYHQ/w640-h640/prediksi-syair-hk.14.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkps8-MVYu-KpwR17xRRuLBRne27vjzF3Dwsq1cMrk2W6qowMZmaXq7v5pn-hZr5wbFE';" />
+        <small>Source: datahkmaster.clodui.com</small>
+                    <p>Perhatikan kalimat penyambung wejangan asa tambah satu angka pada kepekor BB angka tidak resul masuk got.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Prediksi Angka Jitu Hongkong 15 Maret 2021 Dukun Angka Jitu" src="http://46.101.163.21/~dukunangkajitu/wp-content/uploads/2021/03/hk15-1024x853.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9ae72ySgv_shz4SoZMwVvV1Eib2gShoKHfXlJ2GnysTsIPPN4PTCdTrNW-bBB_TNeJs';" />
+        <small>Source: 46.101.163.21</small>
+                    <p>Prediksi Hongkong Kamis 29 April 2021 Halo sobat togel semuanya kali ini pada artikel ini kami ingin membocorkan prediksi togel Hongkong untuk hari Kamis tanggal 29 April 2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mematikan 12 Line Rumus Angka Mati 2021 Youtube" src="https://i.ytimg.com/vi/LoHY2EoToXU/sddefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwiw0plgUeHU11EdyLkNqEhGkMYmwrMDwJDjfNv6nqVByNHHteAw9FpJt76WLU1hWwKY';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Tambahkan angka ribuan dan beberapa ratus 8 5.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Forum Sydney Hari Ini" src="https://i0.wp.com/lh3.googleusercontent.com/-rK9Stlr16HQ/XH9FYI3OZkI/AAAAAAAB1J0/LeLtwtY4HT05Pfb9AKWyL7l17W4_5eNuACLcBGAs/s1600/forum-syair-OPESIA-XYZ_24.jpg?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88EP8W8b7v2JKn1UlvbpGG3FY3qcHUox4RFD30hwBC1eTyIlnyBw1LWqh6ZlUlW6-ugw';" />
+        <small>Source: aldaketahamasei.info</small>
+                    <p>Oktober 30 2020 at 608 am.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Syair Sydney 2021 Di 2021 Dewi Bulan Sydney Naga" src="https://i.pinimg.com/originals/9c/1b/ad/9c1bad814ebd6ed34367b110cd661d64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgUGENmGiDmyUXO4KSY3FRc0H62uIUSvF9DtWqUWQfKqvyWvz-juF8T7kL6BdJKD94DvI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Close suggestions Search Search.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Chandan Kumar Di Chandan Dewi Bulan Permainan Angka Buku" src="https://i.pinimg.com/564x/1a/26/6c/1a266cfd5fedee5a4e3b04a521424f69.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFyTEHxvmKgmoHG2PCTWAKjKuNbEPQjPQDMLOZpwLjclIRZJcBT3r5bGzHLLgyysddU7U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Unsur Ekor mati dari Angka ekor harian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Syair Togel Jitu Hongkong Hari Ini Kamis 17 Oktober 2019 By Baraya Team" src="https://i.ytimg.com/vi/LYCLsOoa_qw/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPk0G8IYvy6BtbJYJ5j3Yv5F1gRHVVgeoWfROSJwdHBUHNSc9pv33jbxzJ1plDRSVM8qM';" />
+        <small>Source: cyberspaceandtime.com</small>
+                    <p>Perforasi Dalam melakukan dilatasi dan kerokan harus diingat bahwa selalu ada kemungkinan terjadinya perforasi dinding uterus yang dapat menjurus ke rongga peritoneum ke.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/sairsitni.html"><i>&larr; sairsitni</i></a>
+                                                                    
+                                        <a href="/syair-arjuna-hari-ini.html"><i>syair arjuna hari ini &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//distractiontradingamass.com/86/63/7d/86637d3a4bbe1c08a5e697d23e4dfb02.js'></script>
+ 
+ 
+ <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4538148,4,1,120,40,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4538148&101" alt="hit counter script" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+
+	    
+	    window.open('https://distractiontradingamass.com/va6ns0my?key=f6c38543c6c5810f9494c4aff7c376a8', '_blank');
+	});
+</script>            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
